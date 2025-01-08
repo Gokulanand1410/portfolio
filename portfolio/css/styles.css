@@ -1,0 +1,148 @@
+/* General reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/premium-photo/modern-black-blue-abstract-background-with-minim_1003113-232.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f4f4f4;
+    color: white; /* White text */
+}
+
+/* Container for consistent width on all sections */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#hero h1,
+#hero p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds shadow for better readability */
+}
+
+/* Navigation */
+#navigation {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navigation ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#navigation ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections with padding and background */
+section {
+    padding: 60px 0; /* Increased padding for a better look */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Project Section Styles */
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background for contrast */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px; /* space between image and text */
+    border-radius: 10px;
+}
+
+.project-details {
+    flex-grow: 1; /* allows text to take available space */
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 1.6em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navigation ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
